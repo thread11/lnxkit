@@ -1,0 +1,67 @@
+-- Quickstart
+mkdir lnxkit
+cd lnxkit
+yarn create react-app .
+
+yarn
+yarn start
+yarn build
+
+yarn analyze
+
+
+
+-- Dependencies
+// Create React App
+https://github.com/facebook/create-react-app
+
+// Semantic UI React
+yarn add semantic-ui-react
+yarn add semantic-ui-css
+https://github.com/Semantic-Org/Semantic-UI-React
+
+// React Router
+yarn add react-router-dom@6
+https://github.com/remix-run/react-router
+
+// Analyzing the Bundle Size
+yarn add source-map-explorer
+https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+https://github.com/danvk/source-map-explorer
+
+// react-textarea-autosize
+yarn add react-textarea-autosize
+https://github.com/andreypopp/react-textarea-autosize
+
+// qrcode.react
+yarn add qrcode.react
+https://github.com/zpao/qrcode.react
+
+// react-copy-to-clipboard
+yarn add react-copy-to-clipboard
+https://github.com/nkbt/react-copy-to-clipboard
+
+// js-yaml
+yarn add js-yaml
+https://github.com/nodeca/js-yaml
+
+
+
+-- Theming
+https://react.semantic-ui.com/usage/
+https://react.semantic-ui.com/theming
+
+yarn remove semantic-ui-css
+yarn add @craco/craco @semantic-ui-react/craco-less -D
+yarn add semantic-ui-less
+
+mkdir src/semantic-ui
+cp -a node_modules/semantic-ui-less/theme.config.example src/semantic-ui/theme.config.example
+cp -a src/semantic-ui/theme.config.example src/semantic-ui/theme.config
+
+diff src/semantic-ui/theme.config.example src/semantic-ui/theme.config
+
+
+
+-- Build
+bash build.sh
